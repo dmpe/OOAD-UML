@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_TPCZoAeFEeanOvJH_j69kw" name="RootElement">
+  <packagedElement xmi:type="uml:Component" xmi:id="_wdhFAAeQEeanOvJH_j69kw" name="BVS" useCase="_yaw00AeQEeanOvJH_j69kw _DizeYAeSEeanOvJH_j69kw _FW6gUAeSEeanOvJH_j69kw _AJpUwAeTEeanOvJH_j69kw _mfYgkAeTEeanOvJH_j69kw _D40DQAeVEeanOvJH_j69kw _F2TqsAeVEeanOvJH_j69kw">
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_yaw00AeQEeanOvJH_j69kw" name="Suche" subject="_wdhFAAeQEeanOvJH_j69kw"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_DizeYAeSEeanOvJH_j69kw" name="Ausleihe" subject="_wdhFAAeQEeanOvJH_j69kw">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_s1OWYAeVEeanOvJH_j69kw" name="ExtensionPoint1"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_FW6gUAeSEeanOvJH_j69kw" name="Reservierung" subject="_wdhFAAeQEeanOvJH_j69kw">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_7l38sAeUEeanOvJH_j69kw" name="mehr als 5 Reservierungen"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_-F964AeUEeanOvJH_j69kw" name="Medium wieder verfugbar"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_JaHvsAeVEeanOvJH_j69kw" name="ExtensionPoint1"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_JxsiMAeVEeanOvJH_j69kw" name="ExtensionPoint2"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_AJpUwAeTEeanOvJH_j69kw" name="Anmeldung" subject="_wdhFAAeQEeanOvJH_j69kw"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_mfYgkAeTEeanOvJH_j69kw" name="Medium Verwaltung" subject="_wdhFAAeQEeanOvJH_j69kw"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_D40DQAeVEeanOvJH_j69kw" name="Meldung anzeigen" subject="_wdhFAAeQEeanOvJH_j69kw">
+      <extend xmi:type="uml:Extend" xmi:id="_JaHIoAeVEeanOvJH_j69kw" extendedCase="_FW6gUAeSEeanOvJH_j69kw" extensionLocation="_JaHvsAeVEeanOvJH_j69kw"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_HbDa8AeVEeanOvJH_j69kw" name="ExtensionPoint1"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_F2TqsAeVEeanOvJH_j69kw" name="Email Benachrichtung" subject="_wdhFAAeQEeanOvJH_j69kw">
+      <extend xmi:type="uml:Extend" xmi:id="_Jxr7IAeVEeanOvJH_j69kw" extendedCase="_FW6gUAeSEeanOvJH_j69kw" extensionLocation="_JxsiMAeVEeanOvJH_j69kw"/>
+      <extend xmi:type="uml:Extend" xmi:id="_s1NvUAeVEeanOvJH_j69kw" extendedCase="_DizeYAeSEeanOvJH_j69kw" extensionLocation="_s1OWYAeVEeanOvJH_j69kw"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_HzvnwAeVEeanOvJH_j69kw" name="ExtensionPoint1"/>
+    </ownedUseCase>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_BwMGsAeREeanOvJH_j69kw" name="Nutzer"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_AoXGgAeSEeanOvJH_j69kw" name="Mitarbeiter"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_D4TX0AeTEeanOvJH_j69kw" name="Verwalter"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_9vVZAAeTEeanOvJH_j69kw" memberEnd="_9vWAEgeTEeanOvJH_j69kw _9vWnIAeTEeanOvJH_j69kw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9vWAEAeTEeanOvJH_j69kw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9vWAEQeTEeanOvJH_j69kw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_9vWAEgeTEeanOvJH_j69kw" name="anmeldung" type="_AJpUwAeTEeanOvJH_j69kw" association="_9vVZAAeTEeanOvJH_j69kw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_9vWnIAeTEeanOvJH_j69kw" name="nutzer" type="_BwMGsAeREeanOvJH_j69kw" association="_9vVZAAeTEeanOvJH_j69kw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_-ZYbkAeTEeanOvJH_j69kw" memberEnd="_-ZZCoAeTEeanOvJH_j69kw _-ZZCoQeTEeanOvJH_j69kw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-ZYbkQeTEeanOvJH_j69kw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-ZYbkgeTEeanOvJH_j69kw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_-ZZCoAeTEeanOvJH_j69kw" name="anmeldung" type="_AJpUwAeTEeanOvJH_j69kw" association="_-ZYbkAeTEeanOvJH_j69kw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_-ZZCoQeTEeanOvJH_j69kw" name="verwalter" type="_D4TX0AeTEeanOvJH_j69kw" association="_-ZYbkAeTEeanOvJH_j69kw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_nOJOkAeUEeanOvJH_j69kw" memberEnd="_nOJ1oAeUEeanOvJH_j69kw _nOJ1oQeUEeanOvJH_j69kw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nOJOkQeUEeanOvJH_j69kw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nOJOkgeUEeanOvJH_j69kw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_nOJ1oAeUEeanOvJH_j69kw" name="medium verwaltung" type="_mfYgkAeTEeanOvJH_j69kw" association="_nOJOkAeUEeanOvJH_j69kw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_nOJ1oQeUEeanOvJH_j69kw" name="verwalter" type="_D4TX0AeTEeanOvJH_j69kw" association="_nOJOkAeUEeanOvJH_j69kw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_nqlS8AeUEeanOvJH_j69kw" memberEnd="_nql6AAeUEeanOvJH_j69kw _nql6AQeUEeanOvJH_j69kw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nqlS8QeUEeanOvJH_j69kw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nqlS8geUEeanOvJH_j69kw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_nql6AAeUEeanOvJH_j69kw" name="medium verwaltung" type="_mfYgkAeTEeanOvJH_j69kw" association="_nqlS8AeUEeanOvJH_j69kw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_nql6AQeUEeanOvJH_j69kw" name="mitarbeiter" type="_AoXGgAeSEeanOvJH_j69kw" association="_nqlS8AeUEeanOvJH_j69kw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_C4yGcAeREeanOvJH_j69kw" name="Fernleihesystem"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_zNEesAeUEeanOvJH_j69kw" memberEnd="_zNEesweUEeanOvJH_j69kw _zNFFwAeUEeanOvJH_j69kw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zNEesQeUEeanOvJH_j69kw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zNEesgeUEeanOvJH_j69kw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_zNEesweUEeanOvJH_j69kw" name="reservierung" type="_FW6gUAeSEeanOvJH_j69kw" association="_zNEesAeUEeanOvJH_j69kw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_zNFFwAeUEeanOvJH_j69kw" name="nutzer" type="_BwMGsAeREeanOvJH_j69kw" association="_zNEesAeUEeanOvJH_j69kw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Tdi8cAeVEeanOvJH_j69kw" memberEnd="_Tdi8cweVEeanOvJH_j69kw _TdjjgAeVEeanOvJH_j69kw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Tdi8cQeVEeanOvJH_j69kw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Tdi8cgeVEeanOvJH_j69kw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Tdi8cweVEeanOvJH_j69kw" name="ausleihe" type="_DizeYAeSEeanOvJH_j69kw" association="_Tdi8cAeVEeanOvJH_j69kw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_TdjjgAeVEeanOvJH_j69kw" name="mitarbeiter" type="_AoXGgAeSEeanOvJH_j69kw" association="_Tdi8cAeVEeanOvJH_j69kw"/>
+  </packagedElement>
+</uml:Model>
