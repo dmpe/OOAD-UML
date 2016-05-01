@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA">
+  <packagedElement xmi:type="uml:Package" xmi:id="_w8IxIM37EdqwVrslYOdUDA" name="Bibliothek">
+    <elementImport xmi:type="uml:ElementImport" xmi:id="_vl0DMDyTEd-3Hbkq2_7ukg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </elementImport>
+    <elementImport xmi:type="uml:ElementImport" xmi:id="_vmG-IDyTEd-3Hbkq2_7ukg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </elementImport>
+    <elementImport xmi:type="uml:ElementImport" xmi:id="_vmG-ITyTEd-3Hbkq2_7ukg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_kbea4DKREd-3NbCrun5sTw" name="Anwendungsfälle">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_pD-6QDKVEd-2_YPEqabriw" annotatedElement="_iFg2sDGtEd-ogaCEqUbbyQ">
+      <body>Genauere Spezifikation notwendig&#xD;
+</body>
+    </ownedComment>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_M_zTIjGrEd-ogaCEqUbbyQ" name="Ausweis verlängern"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_DkaE0jGtEd-ogaCEqUbbyQ" name="Berechtigung prüfen"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_cRs6cjGsEd-ogaCEqUbbyQ" name="Medium anlegen">
+      <extend xmi:type="uml:Extend" xmi:id="_1EbNNDGsEd-ogaCEqUbbyQ" name="Extend1" visibility="public" extendedCase="_ee9cMjGsEd-ogaCEqUbbyQ" extensionLocation="_pEU4YDGsEd-ogaCEqUbbyQ">
+        <condition xmi:type="uml:Constraint" xmi:id="_1EbNNTGsEd-ogaCEqUbbyQ" constrainedElement="_1EbNNDGsEd-ogaCEqUbbyQ">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_1EbNNjGsEd-ogaCEqUbbyQ">
+            <body>Medium nicht angelegt</body>
+          </specification>
+        </condition>
+      </extend>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_CmeH0jGrEd-ogaCEqUbbyQ" name="Medium reservieren">
+      <include xmi:type="uml:Include" xmi:id="_IprVgzGtEd-ogaCEqUbbyQ" name="Include1" visibility="public" addition="_DkaE0jGtEd-ogaCEqUbbyQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_AqfjUjGrEd-ogaCEqUbbyQ" name="Medium zurückgeben"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_HvNGwjGsEd-ogaCEqUbbyQ" name="Nach Medium suchen"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_Lxa0cjGrEd-ogaCEqUbbyQ" name="Nutzer anlegen"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_GDdMEjGrEd-ogaCEqUbbyQ" name="Nutzer löschen"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_iFg2sDGtEd-ogaCEqUbbyQ" name="System verwalten"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_30jdYjGqEd-ogaCEqUbbyQ" name="Administrator"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_1aLssDGqEd-ogaCEqUbbyQ" name="Bibliotheksbenutzer"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_54bZojGqEd-ogaCEqUbbyQ" name="Bibliotheksverwalter"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_mQ0ZhjGtEd-ogaCEqUbbyQ" memberEnd="_mQ0ZhzGtEd-ogaCEqUbbyQ _mQ-KgjGtEd-ogaCEqUbbyQ">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_mQ0ZhzGtEd-ogaCEqUbbyQ" name="administrator" visibility="public" type="_30jdYjGqEd-ogaCEqUbbyQ" association="_mQ0ZhjGtEd-ogaCEqUbbyQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mQ-KgTGtEd-ogaCEqUbbyQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mQ-KgDGtEd-ogaCEqUbbyQ" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_mQ-KgjGtEd-ogaCEqUbbyQ" name="nutzer verwalten" visibility="public" type="_Pl_nYjGtEd-ogaCEqUbbyQ" association="_mQ0ZhjGtEd-ogaCEqUbbyQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mQ-KhDGtEd-ogaCEqUbbyQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mQ-KgzGtEd-ogaCEqUbbyQ" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_lo422DGtEd-ogaCEqUbbyQ" memberEnd="_lo422TGtEd-ogaCEqUbbyQ _lo423DGtEd-ogaCEqUbbyQ">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_lo422TGtEd-ogaCEqUbbyQ" name="administrator" visibility="public" type="_30jdYjGqEd-ogaCEqUbbyQ" association="_lo422DGtEd-ogaCEqUbbyQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lo422zGtEd-ogaCEqUbbyQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lo422jGtEd-ogaCEqUbbyQ" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_lo423DGtEd-ogaCEqUbbyQ" name="system verwalten" visibility="public" type="_iFg2sDGtEd-ogaCEqUbbyQ" association="_lo422DGtEd-ogaCEqUbbyQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lo423jGtEd-ogaCEqUbbyQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lo423TGtEd-ogaCEqUbbyQ" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Ru44djGrEd-ogaCEqUbbyQ" memberEnd="_Ru44dzGrEd-ogaCEqUbbyQ _Ru44ejGrEd-ogaCEqUbbyQ">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Ru44dzGrEd-ogaCEqUbbyQ" name="nutzer" visibility="public" type="_1aLssDGqEd-ogaCEqUbbyQ" association="_Ru44djGrEd-ogaCEqUbbyQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ru44eTGrEd-ogaCEqUbbyQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ru44eDGrEd-ogaCEqUbbyQ" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Ru44ejGrEd-ogaCEqUbbyQ" name="medium ausleihen" visibility="public" type="__CV5wDGqEd-ogaCEqUbbyQ" association="_Ru44djGrEd-ogaCEqUbbyQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ru44fDGrEd-ogaCEqUbbyQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ru44ezGrEd-ogaCEqUbbyQ" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_bhVC5zGrEd-ogaCEqUbbyQ" memberEnd="_bhVC6DGrEd-ogaCEqUbbyQ _bhVC6zGrEd-ogaCEqUbbyQ">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_bhVC6DGrEd-ogaCEqUbbyQ" name="nutzer" visibility="public" type="_1aLssDGqEd-ogaCEqUbbyQ" association="_bhVC5zGrEd-ogaCEqUbbyQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bhVC6jGrEd-ogaCEqUbbyQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bhVC6TGrEd-ogaCEqUbbyQ" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_bhVC6zGrEd-ogaCEqUbbyQ" name="medium reservieren" visibility="public" type="_CmeH0jGrEd-ogaCEqUbbyQ" association="_bhVC5zGrEd-ogaCEqUbbyQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bhVC7TGrEd-ogaCEqUbbyQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bhVC7DGrEd-ogaCEqUbbyQ" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_a2jnlzGrEd-ogaCEqUbbyQ" memberEnd="_a2jnmDGrEd-ogaCEqUbbyQ _a2jnmzGrEd-ogaCEqUbbyQ">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_a2jnmDGrEd-ogaCEqUbbyQ" name="nutzer" visibility="public" type="_1aLssDGqEd-ogaCEqUbbyQ" association="_a2jnlzGrEd-ogaCEqUbbyQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_a2jnmjGrEd-ogaCEqUbbyQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_a2jnmTGrEd-ogaCEqUbbyQ" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_a2jnmzGrEd-ogaCEqUbbyQ" name="medium zurückgeben" visibility="public" type="_AqfjUjGrEd-ogaCEqUbbyQ" association="_a2jnlzGrEd-ogaCEqUbbyQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_a2jnnTGrEd-ogaCEqUbbyQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_a2jnnDGrEd-ogaCEqUbbyQ" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_KCRVljGsEd-ogaCEqUbbyQ" memberEnd="_KCRVlzGsEd-ogaCEqUbbyQ _KCRVmjGsEd-ogaCEqUbbyQ">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_KCRVlzGsEd-ogaCEqUbbyQ" name="nutzer" visibility="public" type="_1aLssDGqEd-ogaCEqUbbyQ" association="_KCRVljGsEd-ogaCEqUbbyQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KCRVmTGsEd-ogaCEqUbbyQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KCRVmDGsEd-ogaCEqUbbyQ" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_KCRVmjGsEd-ogaCEqUbbyQ" name="nach Medium suchen" visibility="public" type="_HvNGwjGsEd-ogaCEqUbbyQ" association="_KCRVljGsEd-ogaCEqUbbyQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KCRVnDGsEd-ogaCEqUbbyQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KCRVmzGsEd-ogaCEqUbbyQ" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_dpELdjGrEd-ogaCEqUbbyQ" memberEnd="_dpELdzGrEd-ogaCEqUbbyQ _dpELejGrEd-ogaCEqUbbyQ">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_dpELdzGrEd-ogaCEqUbbyQ" name="verwalter" visibility="public" type="_54bZojGqEd-ogaCEqUbbyQ" association="_dpELdjGrEd-ogaCEqUbbyQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dpELeTGrEd-ogaCEqUbbyQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dpELeDGrEd-ogaCEqUbbyQ" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_dpELejGrEd-ogaCEqUbbyQ" name="ausweis verlängern" visibility="public" type="_M_zTIjGrEd-ogaCEqUbbyQ" association="_dpELdjGrEd-ogaCEqUbbyQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dpELfDGrEd-ogaCEqUbbyQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dpELezGrEd-ogaCEqUbbyQ" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-_K_FjGsEd-ogaCEqUbbyQ" memberEnd="_-_K_FzGsEd-ogaCEqUbbyQ _-_K_GjGsEd-ogaCEqUbbyQ">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_-_K_FzGsEd-ogaCEqUbbyQ" name="verwalter" visibility="public" type="_54bZojGqEd-ogaCEqUbbyQ" association="_-_K_FjGsEd-ogaCEqUbbyQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-_K_GTGsEd-ogaCEqUbbyQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-_K_GDGsEd-ogaCEqUbbyQ" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_-_K_GjGsEd-ogaCEqUbbyQ" name="exemplar anlegen" visibility="public" type="_ee9cMjGsEd-ogaCEqUbbyQ" association="_-_K_FjGsEd-ogaCEqUbbyQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-_K_HDGsEd-ogaCEqUbbyQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-_K_GzGsEd-ogaCEqUbbyQ" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-ZoCBjGsEd-ogaCEqUbbyQ" memberEnd="_-ZoCBzGsEd-ogaCEqUbbyQ _-ZoCCjGsEd-ogaCEqUbbyQ">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_-ZoCBzGsEd-ogaCEqUbbyQ" name="verwalter" visibility="public" type="_54bZojGqEd-ogaCEqUbbyQ" association="_-ZoCBjGsEd-ogaCEqUbbyQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-ZoCCTGsEd-ogaCEqUbbyQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-ZoCCDGsEd-ogaCEqUbbyQ" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_-ZoCCjGsEd-ogaCEqUbbyQ" name="medium anlegen" visibility="public" type="_cRs6cjGsEd-ogaCEqUbbyQ" association="_-ZoCBjGsEd-ogaCEqUbbyQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-ZoCDDGsEd-ogaCEqUbbyQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-ZoCCzGsEd-ogaCEqUbbyQ" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_fHPZoDGrEd-ogaCEqUbbyQ" memberEnd="_fHPZoTGrEd-ogaCEqUbbyQ _fHPZpDGrEd-ogaCEqUbbyQ">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_fHPZoTGrEd-ogaCEqUbbyQ" name="verwalter" visibility="public" type="_54bZojGqEd-ogaCEqUbbyQ" association="_fHPZoDGrEd-ogaCEqUbbyQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fHPZozGrEd-ogaCEqUbbyQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fHPZojGrEd-ogaCEqUbbyQ" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_fHPZpDGrEd-ogaCEqUbbyQ" name="nutzer anlegen" visibility="public" type="_Lxa0cjGrEd-ogaCEqUbbyQ" association="_fHPZoDGrEd-ogaCEqUbbyQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fHPZpjGrEd-ogaCEqUbbyQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fHPZpTGrEd-ogaCEqUbbyQ" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ec6qRjGrEd-ogaCEqUbbyQ" memberEnd="_ec6qRzGrEd-ogaCEqUbbyQ _ec6qSjGrEd-ogaCEqUbbyQ">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_ec6qRzGrEd-ogaCEqUbbyQ" name="verwalter" visibility="public" type="_54bZojGqEd-ogaCEqUbbyQ" association="_ec6qRjGrEd-ogaCEqUbbyQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ec6qSTGrEd-ogaCEqUbbyQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ec6qSDGrEd-ogaCEqUbbyQ" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_ec6qSjGrEd-ogaCEqUbbyQ" name="nutzer löschen" visibility="public" type="_GDdMEjGrEd-ogaCEqUbbyQ" association="_ec6qRjGrEd-ogaCEqUbbyQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ec6qTDGrEd-ogaCEqUbbyQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ec6qSzGrEd-ogaCEqUbbyQ" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_EPNx8jKVEd-3NbCrun5sTw" name="Medium über Fernleihe zurückgeben">
+      <generalization xmi:type="uml:Generalization" xmi:id="_HLhLBDKVEd-3NbCrun5sTw" general="_AqfjUjGrEd-ogaCEqUbbyQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_h2WgAPW4EeWfp5HusBXJpA" name="Bibliotheksverwaltungssystem">
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="__CV5wDGqEd-ogaCEqUbbyQ" name="Medium ausleihen">
+        <include xmi:type="uml:Include" xmi:id="_Hn-A4zGtEd-ogaCEqUbbyQ" name="Include1" visibility="public" addition="_DkaE0jGtEd-ogaCEqUbbyQ"/>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="__hUfcDKUEd-3NbCrun5sTw" name="Medium über Fernleihe ausleihen">
+        <generalization xmi:type="uml:Generalization" xmi:id="_C_77YzKVEd-3NbCrun5sTw" general="__CV5wDGqEd-ogaCEqUbbyQ"/>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_Pl_nYjGtEd-ogaCEqUbbyQ" name="Nutzer verwalten"/>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_ee9cMjGsEd-ogaCEqUbbyQ" name="Exemplar anlegen">
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_pEU4YDGsEd-ogaCEqUbbyQ" name="Lege Medium an" visibility="public"/>
+      </ownedUseCase>
+    </packagedElement>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_5gb3SvW1EeWMA62Eym5F4w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5gb3S_W1EeWMA62Eym5F4w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://Papyrus.profile.uml#_vaU6ggEYEeCIz8iAxBJnfA"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus.profile.uml#_H9068AEYEeCIz8iAxBJnfA"/>
+  </profileApplication>
+</uml:Model>
