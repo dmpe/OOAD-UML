@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_EvxyoBgLEeaS07MVAOxmww" name="RootElement">
+  <packagedElement xmi:type="uml:Package" xmi:id="_sIcW4BgSEeaS07MVAOxmww" name="klassenmodel">
+    <packagedElement xmi:type="uml:Class" xmi:id="_Idyw8BgVEeaS07MVAOxmww" name="Benutzer"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_J5ItkBgVEeaS07MVAOxmww" name="Mitarbiter">
+      <generalization xmi:type="uml:Generalization" xmi:id="_TEoMwBgVEeaS07MVAOxmww" general="_Idyw8BgVEeaS07MVAOxmww"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_LMJ0oBgVEeaS07MVAOxmww" name="Verwalter">
+      <generalization xmi:type="uml:Generalization" xmi:id="_SoqCcBgVEeaS07MVAOxmww" general="_J5ItkBgVEeaS07MVAOxmww"/>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

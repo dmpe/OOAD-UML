@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA" name="UML-Uebung">
+  <packagedElement xmi:type="uml:Package" xmi:id="_w8IxIM37EdqwVrslYOdUDA" name="Bibliothek">
+    <elementImport xmi:type="uml:ElementImport" xmi:id="_vl0DMDyTEd-3Hbkq2_7ukg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </elementImport>
+    <elementImport xmi:type="uml:ElementImport" xmi:id="_vmG-IDyTEd-3Hbkq2_7ukg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </elementImport>
+    <elementImport xmi:type="uml:ElementImport" xmi:id="_vmG-ITyTEd-3Hbkq2_7ukg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_kbea4DKREd-3NbCrun5sTw" name="Anwendungsfälle">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_pD-6QDKVEd-2_YPEqabriw" annotatedElement="_iFg2sDGtEd-ogaCEqUbbyQ">
+      <body>Genauere Spezifikation notwendig&#xD;
+</body>
+    </ownedComment>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_30jdYjGqEd-ogaCEqUbbyQ" name="Administrator"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_1aLssDGqEd-ogaCEqUbbyQ" name="Bibliotheksbenutzer"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_54bZojGqEd-ogaCEqUbbyQ" name="Bibliotheksverwalter"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_mQ0ZhjGtEd-ogaCEqUbbyQ" name="" memberEnd="_mQ0ZhzGtEd-ogaCEqUbbyQ _mQ-KgjGtEd-ogaCEqUbbyQ">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_mQ0ZhzGtEd-ogaCEqUbbyQ" name="administrator" visibility="public" type="_30jdYjGqEd-ogaCEqUbbyQ" association="_mQ0ZhjGtEd-ogaCEqUbbyQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mQ-KgTGtEd-ogaCEqUbbyQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mQ-KgDGtEd-ogaCEqUbbyQ" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_mQ-KgjGtEd-ogaCEqUbbyQ" name="nutzer verwalten" visibility="public" type="_CuXgoPZCEeW577HX9KebGg" association="_mQ0ZhjGtEd-ogaCEqUbbyQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mQ-KhDGtEd-ogaCEqUbbyQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mQ-KgzGtEd-ogaCEqUbbyQ" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_lo422DGtEd-ogaCEqUbbyQ" name="" memberEnd="_lo422TGtEd-ogaCEqUbbyQ _lo423DGtEd-ogaCEqUbbyQ">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_lo422TGtEd-ogaCEqUbbyQ" name="administrator" visibility="public" type="_30jdYjGqEd-ogaCEqUbbyQ" association="_lo422DGtEd-ogaCEqUbbyQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lo422zGtEd-ogaCEqUbbyQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lo422jGtEd-ogaCEqUbbyQ" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_lo423DGtEd-ogaCEqUbbyQ" name="system verwalten" visibility="public" type="_iFg2sDGtEd-ogaCEqUbbyQ" association="_lo422DGtEd-ogaCEqUbbyQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lo423jGtEd-ogaCEqUbbyQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lo423TGtEd-ogaCEqUbbyQ" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Ru44djGrEd-ogaCEqUbbyQ" name="" memberEnd="_Ru44dzGrEd-ogaCEqUbbyQ _Ru44ejGrEd-ogaCEqUbbyQ">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Ru44dzGrEd-ogaCEqUbbyQ" name="nutzer" visibility="public" type="_1aLssDGqEd-ogaCEqUbbyQ" association="_Ru44djGrEd-ogaCEqUbbyQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ru44eTGrEd-ogaCEqUbbyQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ru44eDGrEd-ogaCEqUbbyQ" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Ru44ejGrEd-ogaCEqUbbyQ" name="medium ausleihen" visibility="public" type="__CV5wDGqEd-ogaCEqUbbyQ" association="_Ru44djGrEd-ogaCEqUbbyQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ru44fDGrEd-ogaCEqUbbyQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ru44ezGrEd-ogaCEqUbbyQ" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_bhVC5zGrEd-ogaCEqUbbyQ" name="" memberEnd="_bhVC6DGrEd-ogaCEqUbbyQ _bhVC6zGrEd-ogaCEqUbbyQ">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_bhVC6DGrEd-ogaCEqUbbyQ" name="nutzer" visibility="public" type="_1aLssDGqEd-ogaCEqUbbyQ" association="_bhVC5zGrEd-ogaCEqUbbyQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bhVC6jGrEd-ogaCEqUbbyQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bhVC6TGrEd-ogaCEqUbbyQ" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_bhVC6zGrEd-ogaCEqUbbyQ" name="medium reservieren" visibility="public" type="_CmeH0jGrEd-ogaCEqUbbyQ" association="_bhVC5zGrEd-ogaCEqUbbyQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bhVC7TGrEd-ogaCEqUbbyQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bhVC7DGrEd-ogaCEqUbbyQ" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_a2jnlzGrEd-ogaCEqUbbyQ" name="" memberEnd="_a2jnmDGrEd-ogaCEqUbbyQ _a2jnmzGrEd-ogaCEqUbbyQ">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_a2jnmDGrEd-ogaCEqUbbyQ" name="nutzer" visibility="public" type="_1aLssDGqEd-ogaCEqUbbyQ" association="_a2jnlzGrEd-ogaCEqUbbyQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_a2jnmjGrEd-ogaCEqUbbyQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_a2jnmTGrEd-ogaCEqUbbyQ" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_a2jnmzGrEd-ogaCEqUbbyQ" name="medium zurückgeben" visibility="public" type="_AqfjUjGrEd-ogaCEqUbbyQ" association="_a2jnlzGrEd-ogaCEqUbbyQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_a2jnnTGrEd-ogaCEqUbbyQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_a2jnnDGrEd-ogaCEqUbbyQ" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_KCRVljGsEd-ogaCEqUbbyQ" memberEnd="_KCRVlzGsEd-ogaCEqUbbyQ _KCRVmjGsEd-ogaCEqUbbyQ">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_KCRVlzGsEd-ogaCEqUbbyQ" name="nutzer" visibility="public" type="_1aLssDGqEd-ogaCEqUbbyQ" association="_KCRVljGsEd-ogaCEqUbbyQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KCRVmTGsEd-ogaCEqUbbyQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KCRVmDGsEd-ogaCEqUbbyQ" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_KCRVmjGsEd-ogaCEqUbbyQ" name="nach Medium suchen" visibility="public" type="_HvNGwjGsEd-ogaCEqUbbyQ" association="_KCRVljGsEd-ogaCEqUbbyQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KCRVnDGsEd-ogaCEqUbbyQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KCRVmzGsEd-ogaCEqUbbyQ" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_dpELdjGrEd-ogaCEqUbbyQ" name="" memberEnd="_dpELdzGrEd-ogaCEqUbbyQ _dpELejGrEd-ogaCEqUbbyQ">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_dpELdzGrEd-ogaCEqUbbyQ" name="verwalter" visibility="public" type="_54bZojGqEd-ogaCEqUbbyQ" association="_dpELdjGrEd-ogaCEqUbbyQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dpELeTGrEd-ogaCEqUbbyQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dpELeDGrEd-ogaCEqUbbyQ" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_dpELejGrEd-ogaCEqUbbyQ" name="ausweis verlängern" visibility="public" type="_M_zTIjGrEd-ogaCEqUbbyQ" association="_dpELdjGrEd-ogaCEqUbbyQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dpELfDGrEd-ogaCEqUbbyQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dpELezGrEd-ogaCEqUbbyQ" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-_K_FjGsEd-ogaCEqUbbyQ" name="" memberEnd="_-_K_FzGsEd-ogaCEqUbbyQ _-_K_GjGsEd-ogaCEqUbbyQ">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_-_K_FzGsEd-ogaCEqUbbyQ" name="verwalter" visibility="public" type="_54bZojGqEd-ogaCEqUbbyQ" association="_-_K_FjGsEd-ogaCEqUbbyQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-_K_GTGsEd-ogaCEqUbbyQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-_K_GDGsEd-ogaCEqUbbyQ" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_-_K_GjGsEd-ogaCEqUbbyQ" name="exemplar anlegen" visibility="public" type="_ee9cMjGsEd-ogaCEqUbbyQ" association="_-_K_FjGsEd-ogaCEqUbbyQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-_K_HDGsEd-ogaCEqUbbyQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-_K_GzGsEd-ogaCEqUbbyQ" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-ZoCBjGsEd-ogaCEqUbbyQ" name="" memberEnd="_-ZoCBzGsEd-ogaCEqUbbyQ _-ZoCCjGsEd-ogaCEqUbbyQ">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_-ZoCBzGsEd-ogaCEqUbbyQ" name="verwalter" visibility="public" type="_54bZojGqEd-ogaCEqUbbyQ" association="_-ZoCBjGsEd-ogaCEqUbbyQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-ZoCCTGsEd-ogaCEqUbbyQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-ZoCCDGsEd-ogaCEqUbbyQ" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_-ZoCCjGsEd-ogaCEqUbbyQ" name="medium anlegen" visibility="public" type="_cRs6cjGsEd-ogaCEqUbbyQ" association="_-ZoCBjGsEd-ogaCEqUbbyQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-ZoCDDGsEd-ogaCEqUbbyQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-ZoCCzGsEd-ogaCEqUbbyQ" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_fHPZoDGrEd-ogaCEqUbbyQ" name="" memberEnd="_fHPZoTGrEd-ogaCEqUbbyQ _fHPZpDGrEd-ogaCEqUbbyQ">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_fHPZoTGrEd-ogaCEqUbbyQ" name="verwalter" visibility="public" type="_54bZojGqEd-ogaCEqUbbyQ" association="_fHPZoDGrEd-ogaCEqUbbyQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fHPZozGrEd-ogaCEqUbbyQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fHPZojGrEd-ogaCEqUbbyQ" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_fHPZpDGrEd-ogaCEqUbbyQ" name="nutzer anlegen" visibility="public" type="_Lxa0cjGrEd-ogaCEqUbbyQ" association="_fHPZoDGrEd-ogaCEqUbbyQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fHPZpjGrEd-ogaCEqUbbyQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fHPZpTGrEd-ogaCEqUbbyQ" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ec6qRjGrEd-ogaCEqUbbyQ" name="" memberEnd="_ec6qRzGrEd-ogaCEqUbbyQ _ec6qSjGrEd-ogaCEqUbbyQ">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_ec6qRzGrEd-ogaCEqUbbyQ" name="verwalter" visibility="public" type="_54bZojGqEd-ogaCEqUbbyQ" association="_ec6qRjGrEd-ogaCEqUbbyQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ec6qSTGrEd-ogaCEqUbbyQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ec6qSDGrEd-ogaCEqUbbyQ" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_ec6qSjGrEd-ogaCEqUbbyQ" name="nutzer löschen" visibility="public" type="_GDdMEjGrEd-ogaCEqUbbyQ" association="_ec6qRjGrEd-ogaCEqUbbyQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ec6qTDGrEd-ogaCEqUbbyQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ec6qSzGrEd-ogaCEqUbbyQ" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_CuXgoPZCEeW577HX9KebGg" name="Bibliotheksverwaltungssystem">
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_EPNx8jKVEd-3NbCrun5sTw" name="Medium über Fernleihe zurückgeben">
+        <generalization xmi:type="uml:Generalization" xmi:id="_HLhLBDKVEd-3NbCrun5sTw" general="_CuXgoPZCEeW577HX9KebGg"/>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_Pl_nYjGtEd-ogaCEqUbbyQ" name="Nutzer verwalten"/>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_iFg2sDGtEd-ogaCEqUbbyQ" name="System verwalten"/>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="__hUfcDKUEd-3NbCrun5sTw" name="Medium über Fernleihe ausleihen">
+        <generalization xmi:type="uml:Generalization" xmi:id="_C_77YzKVEd-3NbCrun5sTw" general="__CV5wDGqEd-ogaCEqUbbyQ"/>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="__CV5wDGqEd-ogaCEqUbbyQ" name="Medium ausleihen">
+        <include xmi:type="uml:Include" xmi:id="_Hn-A4zGtEd-ogaCEqUbbyQ" name="Include1" visibility="public" addition="_DkaE0jGtEd-ogaCEqUbbyQ"/>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_M_zTIjGrEd-ogaCEqUbbyQ" name="Ausweis verlängern"/>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_DkaE0jGtEd-ogaCEqUbbyQ" name="Berechtigung prüfen"/>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_ee9cMjGsEd-ogaCEqUbbyQ" name="Exemplar anlegen">
+        <ownedBehavior xmi:type="uml:Activity" xmi:id="_k6n_gPZLEeW577HX9KebGg" name="Exemplar anlegen" node="_HwekEPZMEeW577HX9KebGg _s6zFoPZMEeW577HX9KebGg _vMNHkPZMEeW577HX9KebGg _w9cbsPZMEeW577HX9KebGg _8bbh8PZMEeW577HX9KebGg _C5t0APZNEeW577HX9KebGg _F2z3QPZNEeW577HX9KebGg _LJ9L4PZNEeW577HX9KebGg _NIPdgPZNEeW577HX9KebGg _PYFZMPZNEeW577HX9KebGg _QRMygPZNEeW577HX9KebGg _SStXQPZNEeW577HX9KebGg _WivpEPZNEeW577HX9KebGg _XwYg4PZNEeW577HX9KebGg" group="_3XyeYPZLEeW577HX9KebGg _9gfiAPZLEeW577HX9KebGg">
+          <edge xmi:type="uml:ControlFlow" xmi:id="_nUUI0PZNEeW577HX9KebGg" target="_s6zFoPZMEeW577HX9KebGg" source="_HwekEPZMEeW577HX9KebGg"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_n9K4kPZNEeW577HX9KebGg" target="_vMNHkPZMEeW577HX9KebGg" source="_s6zFoPZMEeW577HX9KebGg"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_pHkPIPZNEeW577HX9KebGg" target="_w9cbsPZMEeW577HX9KebGg" source="_vMNHkPZMEeW577HX9KebGg"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_styH4PZNEeW577HX9KebGg" target="_8bbh8PZMEeW577HX9KebGg" source="_w9cbsPZMEeW577HX9KebGg"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_tJ-UoPZNEeW577HX9KebGg" target="_C5t0APZNEeW577HX9KebGg" source="_8bbh8PZMEeW577HX9KebGg"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_tx7FcPZNEeW577HX9KebGg" target="_F2z3QPZNEeW577HX9KebGg" source="_C5t0APZNEeW577HX9KebGg"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_uNUA8PZNEeW577HX9KebGg" target="_LJ9L4PZNEeW577HX9KebGg" source="_C5t0APZNEeW577HX9KebGg"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_umA00PZNEeW577HX9KebGg" target="_NIPdgPZNEeW577HX9KebGg" source="_F2z3QPZNEeW577HX9KebGg"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_vFu2sPZNEeW577HX9KebGg" target="_NIPdgPZNEeW577HX9KebGg" source="_LJ9L4PZNEeW577HX9KebGg"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_vuopwPZNEeW577HX9KebGg" target="_PYFZMPZNEeW577HX9KebGg" source="_NIPdgPZNEeW577HX9KebGg"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_5KuwwPZNEeW577HX9KebGg" target="_QRMygPZNEeW577HX9KebGg" source="_PYFZMPZNEeW577HX9KebGg"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_5mkYMPZNEeW577HX9KebGg" target="_SStXQPZNEeW577HX9KebGg" source="_QRMygPZNEeW577HX9KebGg"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_6A48sPZNEeW577HX9KebGg" target="_WivpEPZNEeW577HX9KebGg" source="_SStXQPZNEeW577HX9KebGg"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_6XoBsPZNEeW577HX9KebGg" target="_XwYg4PZNEeW577HX9KebGg" source="_WivpEPZNEeW577HX9KebGg"/>
+          <group xmi:type="uml:ActivityPartition" xmi:id="_3XyeYPZLEeW577HX9KebGg" name=": Bibliotheksverwalter" node="_HwekEPZMEeW577HX9KebGg _s6zFoPZMEeW577HX9KebGg _w9cbsPZMEeW577HX9KebGg _C5t0APZNEeW577HX9KebGg _F2z3QPZNEeW577HX9KebGg _LJ9L4PZNEeW577HX9KebGg _NIPdgPZNEeW577HX9KebGg _QRMygPZNEeW577HX9KebGg" represents="_54bZojGqEd-ogaCEqUbbyQ"/>
+          <group xmi:type="uml:ActivityPartition" xmi:id="_9gfiAPZLEeW577HX9KebGg" name="Bibliotheksverwaltungssystem" node="_vMNHkPZMEeW577HX9KebGg _8bbh8PZMEeW577HX9KebGg _PYFZMPZNEeW577HX9KebGg _SStXQPZNEeW577HX9KebGg _WivpEPZNEeW577HX9KebGg _XwYg4PZNEeW577HX9KebGg" represents="_CuXgoPZCEeW577HX9KebGg"/>
+          <node xmi:type="uml:InitialNode" xmi:id="_HwekEPZMEeW577HX9KebGg" name="" outgoing="_nUUI0PZNEeW577HX9KebGg" inPartition="_3XyeYPZLEeW577HX9KebGg"/>
+          <node xmi:type="uml:OpaqueAction" xmi:id="_s6zFoPZMEeW577HX9KebGg" name="Befehl &quot;Neues Exemplar&quot; wählen" incoming="_nUUI0PZNEeW577HX9KebGg" outgoing="_n9K4kPZNEeW577HX9KebGg" inPartition="_3XyeYPZLEeW577HX9KebGg"/>
+          <node xmi:type="uml:OpaqueAction" xmi:id="_vMNHkPZMEeW577HX9KebGg" name="Eingabemaske &quot;Exemplardaten&quot; öffnen" incoming="_n9K4kPZNEeW577HX9KebGg" outgoing="_pHkPIPZNEeW577HX9KebGg" inPartition="_9gfiAPZLEeW577HX9KebGg"/>
+          <node xmi:type="uml:OpaqueAction" xmi:id="_w9cbsPZMEeW577HX9KebGg" name="Daten eintragen und Befehl &quot;Medium auswählen&quot; wählen" incoming="_pHkPIPZNEeW577HX9KebGg" outgoing="_styH4PZNEeW577HX9KebGg" inPartition="_3XyeYPZLEeW577HX9KebGg"/>
+          <node xmi:type="uml:OpaqueAction" xmi:id="_8bbh8PZMEeW577HX9KebGg" name="Auswahldialog öffnen" incoming="_styH4PZNEeW577HX9KebGg" outgoing="_tJ-UoPZNEeW577HX9KebGg" inPartition="_9gfiAPZLEeW577HX9KebGg"/>
+          <node xmi:type="uml:DecisionNode" xmi:id="_C5t0APZNEeW577HX9KebGg" name="" incoming="_tJ-UoPZNEeW577HX9KebGg" outgoing="_tx7FcPZNEeW577HX9KebGg _uNUA8PZNEeW577HX9KebGg" inPartition="_3XyeYPZLEeW577HX9KebGg"/>
+          <node xmi:type="uml:CallBehaviorAction" xmi:id="_F2z3QPZNEeW577HX9KebGg" name="Lege Medium an" incoming="_tx7FcPZNEeW577HX9KebGg" outgoing="_umA00PZNEeW577HX9KebGg" inPartition="_3XyeYPZLEeW577HX9KebGg" behavior="_SCZ08PZOEeW577HX9KebGg"/>
+          <node xmi:type="uml:OpaqueAction" xmi:id="_LJ9L4PZNEeW577HX9KebGg" name="Medium auswählen" incoming="_uNUA8PZNEeW577HX9KebGg" outgoing="_vFu2sPZNEeW577HX9KebGg" inPartition="_3XyeYPZLEeW577HX9KebGg"/>
+          <node xmi:type="uml:MergeNode" xmi:id="_NIPdgPZNEeW577HX9KebGg" name="" incoming="_umA00PZNEeW577HX9KebGg _vFu2sPZNEeW577HX9KebGg" outgoing="_vuopwPZNEeW577HX9KebGg" inPartition="_3XyeYPZLEeW577HX9KebGg"/>
+          <node xmi:type="uml:OpaqueAction" xmi:id="_PYFZMPZNEeW577HX9KebGg" name="Dialog schließen" incoming="_vuopwPZNEeW577HX9KebGg" outgoing="_5KuwwPZNEeW577HX9KebGg" inPartition="_9gfiAPZLEeW577HX9KebGg"/>
+          <node xmi:type="uml:OpaqueAction" xmi:id="_QRMygPZNEeW577HX9KebGg" name="Befehl &quot;Exemplar erstellen&quot; wählen" incoming="_5KuwwPZNEeW577HX9KebGg" outgoing="_5mkYMPZNEeW577HX9KebGg" inPartition="_3XyeYPZLEeW577HX9KebGg"/>
+          <node xmi:type="uml:OpaqueAction" xmi:id="_SStXQPZNEeW577HX9KebGg" name="Exemplar erstellen und Dialog anzeigen" incoming="_5mkYMPZNEeW577HX9KebGg" outgoing="_6A48sPZNEeW577HX9KebGg" inPartition="_9gfiAPZLEeW577HX9KebGg"/>
+          <node xmi:type="uml:OpaqueAction" xmi:id="_WivpEPZNEeW577HX9KebGg" name="Eingabemaske schließen" incoming="_6A48sPZNEeW577HX9KebGg" outgoing="_6XoBsPZNEeW577HX9KebGg" inPartition="_9gfiAPZLEeW577HX9KebGg"/>
+          <node xmi:type="uml:ActivityFinalNode" xmi:id="_XwYg4PZNEeW577HX9KebGg" name="" incoming="_6XoBsPZNEeW577HX9KebGg" inPartition="_9gfiAPZLEeW577HX9KebGg"/>
+        </ownedBehavior>
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_pEU4YDGsEd-ogaCEqUbbyQ" name="          Lege Medium an" visibility="public"/>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_cRs6cjGsEd-ogaCEqUbbyQ" name="Medium anlegen" classifierBehavior="_SCZ08PZOEeW577HX9KebGg">
+        <ownedBehavior xmi:type="uml:Activity" xmi:id="_SCZ08PZOEeW577HX9KebGg" name="Medium anlegen" node="_ff2RgPZOEeW577HX9KebGg _gH360PZOEeW577HX9KebGg _g-ahQPZOEeW577HX9KebGg _kTDh0PZOEeW577HX9KebGg _mNB7MPZOEeW577HX9KebGg _oWPqcPZOEeW577HX9KebGg _qqT-0PZOEeW577HX9KebGg _rrOpQPZOEeW577HX9KebGg" group="_YBzLkPZOEeW577HX9KebGg _abyhwPZOEeW577HX9KebGg">
+          <edge xmi:type="uml:ControlFlow" xmi:id="_6BQToPZOEeW577HX9KebGg" target="_g-ahQPZOEeW577HX9KebGg" source="_ff2RgPZOEeW577HX9KebGg"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_6djOEPZOEeW577HX9KebGg" target="_kTDh0PZOEeW577HX9KebGg" source="_g-ahQPZOEeW577HX9KebGg"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_62Yk0PZOEeW577HX9KebGg" target="_oWPqcPZOEeW577HX9KebGg" source="_kTDh0PZOEeW577HX9KebGg"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_7N33wPZOEeW577HX9KebGg" target="_mNB7MPZOEeW577HX9KebGg" source="_oWPqcPZOEeW577HX9KebGg"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_7mVbEPZOEeW577HX9KebGg" target="_qqT-0PZOEeW577HX9KebGg" source="_mNB7MPZOEeW577HX9KebGg"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_792jMPZOEeW577HX9KebGg" target="_rrOpQPZOEeW577HX9KebGg" source="_qqT-0PZOEeW577HX9KebGg"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_8VtCgPZOEeW577HX9KebGg" target="_gH360PZOEeW577HX9KebGg" source="_rrOpQPZOEeW577HX9KebGg"/>
+          <group xmi:type="uml:ActivityPartition" xmi:id="_YBzLkPZOEeW577HX9KebGg" name=": Bibliotheksverwalter" node="_ff2RgPZOEeW577HX9KebGg _g-ahQPZOEeW577HX9KebGg _oWPqcPZOEeW577HX9KebGg _qqT-0PZOEeW577HX9KebGg" represents="_54bZojGqEd-ogaCEqUbbyQ"/>
+          <group xmi:type="uml:ActivityPartition" xmi:id="_abyhwPZOEeW577HX9KebGg" name="Bibliotheksverwaltungssystem" node="_gH360PZOEeW577HX9KebGg _kTDh0PZOEeW577HX9KebGg _mNB7MPZOEeW577HX9KebGg _rrOpQPZOEeW577HX9KebGg" represents="_CuXgoPZCEeW577HX9KebGg"/>
+          <node xmi:type="uml:InitialNode" xmi:id="_ff2RgPZOEeW577HX9KebGg" name="" outgoing="_6BQToPZOEeW577HX9KebGg" inPartition="_YBzLkPZOEeW577HX9KebGg"/>
+          <node xmi:type="uml:ActivityFinalNode" xmi:id="_gH360PZOEeW577HX9KebGg" name="" incoming="_8VtCgPZOEeW577HX9KebGg" inPartition="_abyhwPZOEeW577HX9KebGg"/>
+          <node xmi:type="uml:OpaqueAction" xmi:id="_g-ahQPZOEeW577HX9KebGg" name="Befehl &quot;Neues Medium&quot; auswählen" incoming="_6BQToPZOEeW577HX9KebGg" outgoing="_6djOEPZOEeW577HX9KebGg" inPartition="_YBzLkPZOEeW577HX9KebGg"/>
+          <node xmi:type="uml:OpaqueAction" xmi:id="_kTDh0PZOEeW577HX9KebGg" name="Eingabemaske &quot;Mediendaten&quot; öffnen" incoming="_6djOEPZOEeW577HX9KebGg" outgoing="_62Yk0PZOEeW577HX9KebGg" inPartition="_abyhwPZOEeW577HX9KebGg"/>
+          <node xmi:type="uml:OpaqueAction" xmi:id="_mNB7MPZOEeW577HX9KebGg" name="Medium anlegen und Dialog anzeigen" incoming="_7N33wPZOEeW577HX9KebGg" outgoing="_7mVbEPZOEeW577HX9KebGg" inPartition="_abyhwPZOEeW577HX9KebGg"/>
+          <node xmi:type="uml:OpaqueAction" xmi:id="_oWPqcPZOEeW577HX9KebGg" name="Daten eingeben und &quot;Medium erstellen&quot; auswählen" incoming="_62Yk0PZOEeW577HX9KebGg" outgoing="_7N33wPZOEeW577HX9KebGg" inPartition="_YBzLkPZOEeW577HX9KebGg"/>
+          <node xmi:type="uml:OpaqueAction" xmi:id="_qqT-0PZOEeW577HX9KebGg" name="Meldung bestätigen" incoming="_7mVbEPZOEeW577HX9KebGg" outgoing="_792jMPZOEeW577HX9KebGg" inPartition="_YBzLkPZOEeW577HX9KebGg"/>
+          <node xmi:type="uml:OpaqueAction" xmi:id="_rrOpQPZOEeW577HX9KebGg" name="Eingabemaske &quot;Mediendaten&quot; schließen" incoming="_792jMPZOEeW577HX9KebGg" outgoing="_8VtCgPZOEeW577HX9KebGg" inPartition="_abyhwPZOEeW577HX9KebGg"/>
+        </ownedBehavior>
+        <extend xmi:type="uml:Extend" xmi:id="_1EbNNDGsEd-ogaCEqUbbyQ" name="Lege Medium an" visibility="public" extendedCase="_ee9cMjGsEd-ogaCEqUbbyQ" extensionLocation="_pEU4YDGsEd-ogaCEqUbbyQ">
+          <condition xmi:type="uml:Constraint" xmi:id="_1EbNNTGsEd-ogaCEqUbbyQ" constrainedElement="_1EbNNDGsEd-ogaCEqUbbyQ">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_1EbNNjGsEd-ogaCEqUbbyQ">
+              <body>Medium nicht angelegt</body>
+            </specification>
+          </condition>
+        </extend>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_CmeH0jGrEd-ogaCEqUbbyQ" name="Medium reservieren">
+        <include xmi:type="uml:Include" xmi:id="_IprVgzGtEd-ogaCEqUbbyQ" name="Include1" visibility="public" addition="_DkaE0jGtEd-ogaCEqUbbyQ"/>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_AqfjUjGrEd-ogaCEqUbbyQ" name="Medium zurückgeben"/>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_HvNGwjGsEd-ogaCEqUbbyQ" name="Nach Medium suchen" classifierBehavior="_R_6sMPZPEeW577HX9KebGg">
+        <ownedBehavior xmi:type="uml:Activity" xmi:id="_R_6sMPZPEeW577HX9KebGg" name="Nach Medium suchen" node="_f8LywPZPEeW577HX9KebGg _gnXdwPZPEeW577HX9KebGg _ijwR8PZPEeW577HX9KebGg _kMWncPZPEeW577HX9KebGg _p7EdwPZPEeW577HX9KebGg _rjJO0PZPEeW577HX9KebGg _uSqwIPZPEeW577HX9KebGg _vIj2UPZPEeW577HX9KebGg _wQUvoPZPEeW577HX9KebGg" group="_W-iiUPZPEeW577HX9KebGg _Za6eIPZPEeW577HX9KebGg">
+          <edge xmi:type="uml:ObjectFlow" xmi:id="__cohwPZPEeW577HX9KebGg" target="_67IFcPZPEeW577HX9KebGg" source="_vIj2UPZPEeW577HX9KebGg"/>
+          <edge xmi:type="uml:ObjectFlow" xmi:id="_AslGsPZQEeW577HX9KebGg" target="_7vyckPZPEeW577HX9KebGg" source="_3KdQMPZPEeW577HX9KebGg"/>
+          <edge xmi:type="uml:ObjectFlow" xmi:id="_Bvvz4PZQEeW577HX9KebGg" target="_uSqwIPZPEeW577HX9KebGg" source="_3ucuEPZPEeW577HX9KebGg"/>
+          <edge xmi:type="uml:ObjectFlow" xmi:id="_CurhUPZQEeW577HX9KebGg" target="_8ZdrsPZPEeW577HX9KebGg" source="_uSqwIPZPEeW577HX9KebGg">
+            <guard xmi:type="uml:LiteralBoolean" xmi:id="_Cu9OIPZQEeW577HX9KebGg" value="true"/>
+          </edge>
+          <edge xmi:type="uml:ObjectFlow" xmi:id="_D1bG8PZQEeW577HX9KebGg" target="_wQUvoPZPEeW577HX9KebGg" source="_uSqwIPZPEeW577HX9KebGg">
+            <guard xmi:type="uml:LiteralBoolean" xmi:id="_D1xFMPZQEeW577HX9KebGg"/>
+          </edge>
+          <edge xmi:type="uml:ObjectFlow" xmi:id="_FS7mwPZQEeW577HX9KebGg" target="_vIj2UPZPEeW577HX9KebGg" source="_4liuIPZPEeW577HX9KebGg"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_G3l3cPZQEeW577HX9KebGg" target="_gnXdwPZPEeW577HX9KebGg" source="_f8LywPZPEeW577HX9KebGg"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_HKaFwPZQEeW577HX9KebGg" target="_ijwR8PZPEeW577HX9KebGg" source="_gnXdwPZPEeW577HX9KebGg"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_Hh708PZQEeW577HX9KebGg" target="_vIj2UPZPEeW577HX9KebGg" source="_ijwR8PZPEeW577HX9KebGg"/>
+          <group xmi:type="uml:ActivityPartition" xmi:id="_W-iiUPZPEeW577HX9KebGg" name=": Bibliotheksbenutzer" node="_f8LywPZPEeW577HX9KebGg _gnXdwPZPEeW577HX9KebGg _p7EdwPZPEeW577HX9KebGg _rjJO0PZPEeW577HX9KebGg _uSqwIPZPEeW577HX9KebGg _vIj2UPZPEeW577HX9KebGg _wQUvoPZPEeW577HX9KebGg" represents="_1aLssDGqEd-ogaCEqUbbyQ">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_xDTEsPZPEeW577HX9KebGg" annotatedElement="_uSqwIPZPEeW577HX9KebGg">
+              <body>Suche verfeinern?</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_vvi6EBgKEeaS07MVAOxmww">
+              <body>objektfluss kanten + kontrolfluss kante</body>
+            </ownedComment>
+          </group>
+          <group xmi:type="uml:ActivityPartition" xmi:id="_Za6eIPZPEeW577HX9KebGg" name="Bibliotheksverwaltungssystem" node="_ijwR8PZPEeW577HX9KebGg _kMWncPZPEeW577HX9KebGg" represents="_CuXgoPZCEeW577HX9KebGg">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_pInCUBgKEeaS07MVAOxmww">
+              <body>objekte fluss kanten wegen pins&#xD;
+\</body>
+            </ownedComment>
+          </group>
+          <node xmi:type="uml:InitialNode" xmi:id="_f8LywPZPEeW577HX9KebGg" name="" outgoing="_G3l3cPZQEeW577HX9KebGg" inPartition="_W-iiUPZPEeW577HX9KebGg"/>
+          <node xmi:type="uml:OpaqueAction" xmi:id="_gnXdwPZPEeW577HX9KebGg" name="Befehl &quot;Suchen&quot; auswählen" incoming="_G3l3cPZQEeW577HX9KebGg" outgoing="_HKaFwPZQEeW577HX9KebGg" inPartition="_W-iiUPZPEeW577HX9KebGg"/>
+          <node xmi:type="uml:OpaqueAction" xmi:id="_ijwR8PZPEeW577HX9KebGg" name="Eingabemaske &quot;Suche&quot; öffnen" incoming="_HKaFwPZQEeW577HX9KebGg" outgoing="_Hh708PZQEeW577HX9KebGg" inPartition="_Za6eIPZPEeW577HX9KebGg"/>
+          <node xmi:type="uml:OpaqueAction" xmi:id="_kMWncPZPEeW577HX9KebGg" name="Ergebnisliste anzeigen" inPartition="_Za6eIPZPEeW577HX9KebGg">
+            <inputValue xmi:type="uml:InputPin" xmi:id="_7vyckPZPEeW577HX9KebGg" name="anfrage" incoming="_AslGsPZQEeW577HX9KebGg">
+              <upperBound xmi:type="uml:LiteralInteger" xmi:id="_7vyckfZPEeW577HX9KebGg" value="1"/>
+            </inputValue>
+            <outputValue xmi:type="uml:OutputPin" xmi:id="_3ucuEPZPEeW577HX9KebGg" name="ergebnisse" outgoing="_Bvvz4PZQEeW577HX9KebGg">
+              <upperBound xmi:type="uml:LiteralInteger" xmi:id="_3ud8MPZPEeW577HX9KebGg" value="1"/>
+            </outputValue>
+          </node>
+          <node xmi:type="uml:OpaqueAction" xmi:id="_p7EdwPZPEeW577HX9KebGg" name="Suchbegriff eingeben und starten" inPartition="_W-iiUPZPEeW577HX9KebGg">
+            <inputValue xmi:type="uml:InputPin" xmi:id="_67IFcPZPEeW577HX9KebGg" name="" incoming="__cohwPZPEeW577HX9KebGg">
+              <upperBound xmi:type="uml:LiteralInteger" xmi:id="_67IFcfZPEeW577HX9KebGg" value="1"/>
+            </inputValue>
+            <outputValue xmi:type="uml:OutputPin" xmi:id="_3KdQMPZPEeW577HX9KebGg" name="" outgoing="_AslGsPZQEeW577HX9KebGg">
+              <upperBound xmi:type="uml:LiteralInteger" xmi:id="_3Kg6kPZPEeW577HX9KebGg" value="1"/>
+            </outputValue>
+          </node>
+          <node xmi:type="uml:OpaqueAction" xmi:id="_rjJO0PZPEeW577HX9KebGg" name="Befehl &quot;In Ergebnissen suchen&quot; auswählen" inPartition="_W-iiUPZPEeW577HX9KebGg">
+            <inputValue xmi:type="uml:InputPin" xmi:id="_8ZdrsPZPEeW577HX9KebGg" name="ergebnisse" incoming="_CurhUPZQEeW577HX9KebGg">
+              <upperBound xmi:type="uml:LiteralInteger" xmi:id="_8ZeSwPZPEeW577HX9KebGg" value="1"/>
+            </inputValue>
+            <outputValue xmi:type="uml:OutputPin" xmi:id="_4liuIPZPEeW577HX9KebGg" name="ergebnisse" outgoing="_FS7mwPZQEeW577HX9KebGg">
+              <upperBound xmi:type="uml:LiteralInteger" xmi:id="_4liuIfZPEeW577HX9KebGg" value="1"/>
+            </outputValue>
+          </node>
+          <node xmi:type="uml:DecisionNode" xmi:id="_uSqwIPZPEeW577HX9KebGg" name="" incoming="_Bvvz4PZQEeW577HX9KebGg" outgoing="_CurhUPZQEeW577HX9KebGg _D1bG8PZQEeW577HX9KebGg" inPartition="_W-iiUPZPEeW577HX9KebGg"/>
+          <node xmi:type="uml:MergeNode" xmi:id="_vIj2UPZPEeW577HX9KebGg" name="" incoming="_FS7mwPZQEeW577HX9KebGg _Hh708PZQEeW577HX9KebGg" outgoing="__cohwPZPEeW577HX9KebGg" inPartition="_W-iiUPZPEeW577HX9KebGg"/>
+          <node xmi:type="uml:ActivityFinalNode" xmi:id="_wQUvoPZPEeW577HX9KebGg" name="" incoming="_D1bG8PZQEeW577HX9KebGg" inPartition="_W-iiUPZPEeW577HX9KebGg"/>
+        </ownedBehavior>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_Lxa0cjGrEd-ogaCEqUbbyQ" name="Nutzer anlegen"/>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_GDdMEjGrEd-ogaCEqUbbyQ" name="Nutzer löschen"/>
+    </packagedElement>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_5gb3SvW1EeWMA62Eym5F4w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5gb3S_W1EeWMA62Eym5F4w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://Papyrus.profile.uml#_vaU6ggEYEeCIz8iAxBJnfA"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus.profile.uml#_H9068AEYEeCIz8iAxBJnfA"/>
+  </profileApplication>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_kQVLt_ZTEeW577HX9KebGg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_kQVywPZTEeW577HX9KebGg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
+</uml:Model>
