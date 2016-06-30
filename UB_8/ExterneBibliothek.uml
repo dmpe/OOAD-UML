@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA" name="ExterneBibliothek">
+  <packagedElement xmi:type="uml:Package" xmi:id="_w8IxIM37EdqwVrslYOdUDA" name="ExterneBibliothek">
+    <packagedElement xmi:type="uml:Component" xmi:id="_8HHX4EGGEd-D0p_p_MbJyw" name="FernleihBibliothek">
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_Ro9uYPgIEeWtxfvz9u7iSg" client="_8HHX4EGGEd-D0p_p_MbJyw" supplier="_BvkOIEGHEd-D0p_p_MbJyw" contract="_BvkOIEGHEd-D0p_p_MbJyw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_BvkOIEGHEd-D0p_p_MbJyw" name="IBibliothek"/>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8O1KM_ZpEeWLZcX524W9gQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8O1KNPZpEeWLZcX524W9gQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://Papyrus.profile.uml#_vaU6ggEYEeCIz8iAxBJnfA"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus.profile.uml#_H9068AEYEeCIz8iAxBJnfA"/>
+  </profileApplication>
+</uml:Model>
