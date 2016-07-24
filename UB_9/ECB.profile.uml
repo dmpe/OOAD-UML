@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_BMTtEDzGEd-vmJlgQOiTwg" name="ECB-Profile">
+  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XwnngTzGEd-vmJlgQOiTwg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_D6DyUf2CEeWSMb7RB6o2zw" name="ECBProfile" nsURI="http:///schemas/ECBProfile/_D6DyUP2CEeWSMb7RB6o2zw/2" nsPrefix="ECBProfile">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_D6DyUv2CEeWSMb7RB6o2zw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_D6DyU_2CEeWSMb7RB6o2zw" key="originalName" value="ECB-Profile"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_D6DyY_2CEeWSMb7RB6o2zw" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_D6DyZP2CEeWSMb7RB6o2zw" key="Version" value="0.1.0"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_D6DyZf2CEeWSMb7RB6o2zw" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_D6DyZv2CEeWSMb7RB6o2zw" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_D6DyZ_2CEeWSMb7RB6o2zw" key="Date" value="2016-04-08"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_D6DyaP2CEeWSMb7RB6o2zw" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_D6DyVP2CEeWSMb7RB6o2zw" name="Entity">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_D6DyVf2CEeWSMb7RB6o2zw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_LP3ctTzGEd-vmJlgQOiTwg"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_D6DyVv2CEeWSMb7RB6o2zw" name="base_Class" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_D6DyWP2CEeWSMb7RB6o2zw" name="Control">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_D6DyWf2CEeWSMb7RB6o2zw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_MMgrJTzGEd-vmJlgQOiTwg"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_D6DyWv2CEeWSMb7RB6o2zw" name="base_Class" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_D6DyXP2CEeWSMb7RB6o2zw" name="Boundary">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_D6DyXf2CEeWSMb7RB6o2zw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_M88ChTzGEd-vmJlgQOiTwg"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_D6DyXv2CEeWSMb7RB6o2zw" name="base_Class" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_bqp0ITzGEd-vmJlgQOiTwg" name="ECBProfile" nsURI="http:///schemas/ECBProfile/_bqp0IDzGEd-vmJlgQOiTwg/1" nsPrefix="ECBProfile">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_bqp0IjzGEd-vmJlgQOiTwg" name="Entity">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bqp0IzzGEd-vmJlgQOiTwg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_LP3ctTzGEd-vmJlgQOiTwg"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_bqp0JDzGEd-vmJlgQOiTwg" name="base_Class" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_bqp0JjzGEd-vmJlgQOiTwg" name="Control">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bqp0JzzGEd-vmJlgQOiTwg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_MMgrJTzGEd-vmJlgQOiTwg"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_bqp0KDzGEd-vmJlgQOiTwg" name="base_Class" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_bqp0KjzGEd-vmJlgQOiTwg" name="Boundary">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bqp0KzzGEd-vmJlgQOiTwg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_M88ChTzGEd-vmJlgQOiTwg"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_bqp0LDzGEd-vmJlgQOiTwg" name="base_Class" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_XwnngjzGEd-vmJlgQOiTwg" name="ECBProfile" nsURI="http:///schemas/ECBProfile/_XwnngDzGEd-vmJlgQOiTwg/0" nsPrefix="ECBProfile">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_XwnngzzGEd-vmJlgQOiTwg" name="Entity">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XwnnhDzGEd-vmJlgQOiTwg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_LP3ctTzGEd-vmJlgQOiTwg"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_XwnnhTzGEd-vmJlgQOiTwg" name="Control">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XwnnhjzGEd-vmJlgQOiTwg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_MMgrJTzGEd-vmJlgQOiTwg"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_XwnnhzzGEd-vmJlgQOiTwg" name="Boundary">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XwnniDzGEd-vmJlgQOiTwg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_M88ChTzGEd-vmJlgQOiTwg"/>
+      </eClassifiers>
+    </contents>
+  </eAnnotations>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_PginsDzGEd-vmJlgQOiTwg">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_LP3ctTzGEd-vmJlgQOiTwg" name="Entity">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ZMHVJjzGEd-vmJlgQOiTwg" name="base_Class" association="_ZMHVJDzGEd-vmJlgQOiTwg">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_MMgrJTzGEd-vmJlgQOiTwg" name="Control">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_YwZCdzzGEd-vmJlgQOiTwg" name="base_Class" association="_YwZCdTzGEd-vmJlgQOiTwg">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_M88ChTzGEd-vmJlgQOiTwg" name="Boundary">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Zk_vNjzGEd-vmJlgQOiTwg" name="base_Class" association="_Zk_vNDzGEd-vmJlgQOiTwg">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_YwZCdTzGEd-vmJlgQOiTwg" name="Class_Control" memberEnd="_YwZCdjzGEd-vmJlgQOiTwg _YwZCdzzGEd-vmJlgQOiTwg">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_YwZCdjzGEd-vmJlgQOiTwg" name="extension_Control" type="_MMgrJTzGEd-vmJlgQOiTwg" aggregation="composite" association="_YwZCdTzGEd-vmJlgQOiTwg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_ZMHVJDzGEd-vmJlgQOiTwg" name="Class_Entity" memberEnd="_ZMHVJTzGEd-vmJlgQOiTwg _ZMHVJjzGEd-vmJlgQOiTwg">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_ZMHVJTzGEd-vmJlgQOiTwg" name="extension_Entity" type="_LP3ctTzGEd-vmJlgQOiTwg" aggregation="composite" association="_ZMHVJDzGEd-vmJlgQOiTwg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_Zk_vNDzGEd-vmJlgQOiTwg" name="Class_Boundary" memberEnd="_Zk_vNTzGEd-vmJlgQOiTwg _Zk_vNjzGEd-vmJlgQOiTwg">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_Zk_vNTzGEd-vmJlgQOiTwg" name="extension_Boundary" type="_M88ChTzGEd-vmJlgQOiTwg" aggregation="composite" association="_Zk_vNDzGEd-vmJlgQOiTwg"/>
+  </packagedElement>
+</uml:Profile>

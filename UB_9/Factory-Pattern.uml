@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_ovq-oPZwEeWk2vdBbsdCwA" name="RootElement">
+  <packagedElement xmi:type="uml:Package" xmi:id="_2B5CoPZwEeWk2vdBbsdCwA" name="FactoryPattern">
+    <packagedElement xmi:type="uml:Interaction" xmi:id="_wv2hQPZwEeWk2vdBbsdCwA" name="FactoryPattern">
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_Dxhl8PZyEeWk2vdBbsdCwA" name=": KonkreterErzeuger" coveredBy="_cYnQcPZyEeWk2vdBbsdCwA _cYnQcvZyEeWk2vdBbsdCwA _cYnQcfZyEeWk2vdBbsdCwA _iRUwQPZyEeWk2vdBbsdCwA _ISgoYfZzEeWk2vdBbsdCwA"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_TB4xoPZyEeWk2vdBbsdCwA" name="p: KonkretesProdukt" coveredBy="_iRUwQfZyEeWk2vdBbsdCwA"/>
+      <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_cYnQcPZyEeWk2vdBbsdCwA" name="BehaviorExecSpecStart" covered="_Dxhl8PZyEeWk2vdBbsdCwA" execution="_cYnQcfZyEeWk2vdBbsdCwA"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_cYnQcfZyEeWk2vdBbsdCwA" name="BehaviorExecSpec" covered="_Dxhl8PZyEeWk2vdBbsdCwA" finish="_cYnQcvZyEeWk2vdBbsdCwA" start="_cYnQcPZyEeWk2vdBbsdCwA"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ISgoYfZzEeWk2vdBbsdCwA" name="MessageRecv0" covered="_Dxhl8PZyEeWk2vdBbsdCwA" message="_ISgoYPZzEeWk2vdBbsdCwA"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_iRUwQPZyEeWk2vdBbsdCwA" name="MessageSend" covered="_Dxhl8PZyEeWk2vdBbsdCwA" message="_iRK_QPZyEeWk2vdBbsdCwA"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_iRUwQfZyEeWk2vdBbsdCwA" name="MessageRecv" covered="_TB4xoPZyEeWk2vdBbsdCwA" message="_iRK_QPZyEeWk2vdBbsdCwA"/>
+      <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_cYnQcvZyEeWk2vdBbsdCwA" name="BehaviorExecSpecFinish" covered="_Dxhl8PZyEeWk2vdBbsdCwA" execution="_cYnQcfZyEeWk2vdBbsdCwA"/>
+      <message xmi:type="uml:Message" xmi:id="_iRK_QPZyEeWk2vdBbsdCwA" name="" messageSort="createMessage" receiveEvent="_iRUwQfZyEeWk2vdBbsdCwA" sendEvent="_iRUwQPZyEeWk2vdBbsdCwA"/>
+      <message xmi:type="uml:Message" xmi:id="_ISgoYPZzEeWk2vdBbsdCwA" name="erzeugeProdukt() : return" messageSort="asynchSignal" receiveEvent="_ISgoYfZzEeWk2vdBbsdCwA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_610EoPZwEeWk2vdBbsdCwA" name="Produkt" isAbstract="true"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_92iDoPZwEeWk2vdBbsdCwA" name="KonkretesProdukt">
+      <generalization xmi:type="uml:Generalization" xmi:id="_G8jM8PZxEeWk2vdBbsdCwA" general="_610EoPZwEeWk2vdBbsdCwA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_BTSeYPZxEeWk2vdBbsdCwA" name="KonkreterErzeuger">
+      <generalization xmi:type="uml:Generalization" xmi:id="_GoBHYPZxEeWk2vdBbsdCwA" general="_DXkDQPZxEeWk2vdBbsdCwA"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_mkiHUPZxEeWk2vdBbsdCwA" name="erzeugeProdukt" redefinedOperation="_QDnfIPZxEeWk2vdBbsdCwA">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_p3S4kPZxEeWk2vdBbsdCwA" type="_92iDoPZwEeWk2vdBbsdCwA" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_DXkDQPZxEeWk2vdBbsdCwA" name="AbstrakterErzeuger" isAbstract="true">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_QDnfIPZxEeWk2vdBbsdCwA" name="erzeugeProdukt">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_lQdQUPZxEeWk2vdBbsdCwA" type="_610EoPZwEeWk2vdBbsdCwA" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_MMCwoPZxEeWk2vdBbsdCwA" client="_DXkDQPZxEeWk2vdBbsdCwA" supplier="_610EoPZwEeWk2vdBbsdCwA"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_MtkJUPZxEeWk2vdBbsdCwA" client="_BTSeYPZxEeWk2vdBbsdCwA" supplier="_92iDoPZwEeWk2vdBbsdCwA"/>
+  </packagedElement>
+</uml:Model>

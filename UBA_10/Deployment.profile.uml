@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_u6kb0D1ZEd-yV_uKpAtbiw" name="DeploymentProfile">
+  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AeatET1aEd-yV_uKpAtbiw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_8Vgbwf2BEeWSMb7RB6o2zw" name="DeploymentProfile" nsURI="http:///schemas/DeploymentProfile/_8VgbwP2BEeWSMb7RB6o2zw/2" nsPrefix="DeploymentProfile">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8Vgbyf2BEeWSMb7RB6o2zw" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8Vgbyv2BEeWSMb7RB6o2zw" key="Version" value="0.1.0"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8Vgby_2BEeWSMb7RB6o2zw" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8VgbzP2BEeWSMb7RB6o2zw" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8Vgbzf2BEeWSMb7RB6o2zw" key="Date" value="2016-04-08"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8Vgbzv2BEeWSMb7RB6o2zw" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8Vgbwv2BEeWSMb7RB6o2zw" name="Ethernet">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8Vgbw_2BEeWSMb7RB6o2zw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_2SfroD1ZEd-yV_uKpAtbiw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8VgbxP2BEeWSMb7RB6o2zw" name="base_CommunicationPath" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//CommunicationPath"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8Vgbxv2BEeWSMb7RB6o2zw" name="bandwidth" ordered="false" lowerBound="1" defaultValueLiteral="10 MBit">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_Sm7KkT1aEd-yV_uKpAtbiw" name="DeploymentProfile" nsURI="http:///schemas/DeploymentProfile/_Sm7KkD1aEd-yV_uKpAtbiw/1" nsPrefix="DeploymentProfile">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_Sm7Kkj1aEd-yV_uKpAtbiw" name="Ethernet">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Sm7Kkz1aEd-yV_uKpAtbiw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_2SfroD1ZEd-yV_uKpAtbiw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_Sm7KlD1aEd-yV_uKpAtbiw" name="base_CommunicationPath" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//CommunicationPath"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_Sm7Klj1aEd-yV_uKpAtbiw" name="bandwidth" ordered="false" lowerBound="1" defaultValueLiteral="10 MBit">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_AeatEj1aEd-yV_uKpAtbiw" name="DeploymentProfile" nsURI="http:///schemas/DeploymentProfile/_AeatED1aEd-yV_uKpAtbiw/0" nsPrefix="DeploymentProfile">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_AeatEz1aEd-yV_uKpAtbiw" name="Ethernet">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AeatFD1aEd-yV_uKpAtbiw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_2SfroD1ZEd-yV_uKpAtbiw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_AeatFT1aEd-yV_uKpAtbiw" name="base_CommunicationPath" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//CommunicationPath"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+  </eAnnotations>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_3jjq4D1ZEd-yV_uKpAtbiw">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#CommunicationPath"/>
+  </elementImport>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_MnEg8D1aEd-yV_uKpAtbiw">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_2SfroD1ZEd-yV_uKpAtbiw" name="Ethernet">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_AJ2yUD1aEd-yV_uKpAtbiw" name="base_CommunicationPath" association="_AJtBUz1aEd-yV_uKpAtbiw">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#CommunicationPath"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_EsIDoD1aEd-yV_uKpAtbiw" name="bandwidth">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_I10c4D1aEd-yV_uKpAtbiw" value="10 MBit"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_AJtBUz1aEd-yV_uKpAtbiw" name="CommunicationPath_Ethernet" memberEnd="_AJtBVD1aEd-yV_uKpAtbiw _AJ2yUD1aEd-yV_uKpAtbiw">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_AJtBVD1aEd-yV_uKpAtbiw" name="extension_Ethernet" type="_2SfroD1ZEd-yV_uKpAtbiw" aggregation="composite" association="_AJtBUz1aEd-yV_uKpAtbiw"/>
+  </packagedElement>
+</uml:Profile>

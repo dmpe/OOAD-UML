@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA" name="ECB-Pattern">
+  <packagedElement xmi:type="uml:Association" xmi:id="_PXNM7DzDEd-vmJlgQOiTwg" name="A_&lt;boundary>_&lt;control>" memberEnd="_PXNM7TzDEd-vmJlgQOiTwg _PXNM8DzDEd-vmJlgQOiTwg">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_PXNM7TzDEd-vmJlgQOiTwg" name="boundary" visibility="public" type="_IyZcGDzDEd-vmJlgQOiTwg" association="_PXNM7DzDEd-vmJlgQOiTwg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PXNM7zzDEd-vmJlgQOiTwg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PXNM7jzDEd-vmJlgQOiTwg" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_PXNM8DzDEd-vmJlgQOiTwg" name="control" visibility="public" type="_LRsJCDzDEd-vmJlgQOiTwg" association="_PXNM7DzDEd-vmJlgQOiTwg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PXNM8jzDEd-vmJlgQOiTwg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PXNM8TzDEd-vmJlgQOiTwg" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_QTtRaTzDEd-vmJlgQOiTwg" name="A_&lt;control>_&lt;entity>" memberEnd="_QTtRajzDEd-vmJlgQOiTwg _QTtRbTzDEd-vmJlgQOiTwg">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_QTtRajzDEd-vmJlgQOiTwg" name="control" visibility="public" type="_LRsJCDzDEd-vmJlgQOiTwg" association="_QTtRaTzDEd-vmJlgQOiTwg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QTtRbDzDEd-vmJlgQOiTwg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QTtRazzDEd-vmJlgQOiTwg" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_QTtRbTzDEd-vmJlgQOiTwg" name="entity" visibility="public" type="_HIvWoDzDEd-vmJlgQOiTwg" association="_QTtRaTzDEd-vmJlgQOiTwg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QTtRbzzDEd-vmJlgQOiTwg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QTtRbjzDEd-vmJlgQOiTwg" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_IyZcGDzDEd-vmJlgQOiTwg" name="Boundary" isAbstract="true"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_LRsJCDzDEd-vmJlgQOiTwg" name="Control" isAbstract="true"/>
+  <packagedElement xmi:type="uml:Collaboration" xmi:id="_4hGToDzJEd-vmJlgQOiTwg" name="ECB-Pattern">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_HZA09D2MEd-yV_uKpAtbiw" name="role" visibility="private"/>
+    <ownedBehavior xmi:type="uml:Interaction" xmi:id="_4hGToTzJEd-vmJlgQOiTwg">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="__AGXYDzJEd-vmJlgQOiTwg" name="boundary" visibility="public" type="_IyZcGDzDEd-vmJlgQOiTwg"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_EdFkgDzKEd-vmJlgQOiTwg" name="controller" visibility="public" type="_LRsJCDzDEd-vmJlgQOiTwg"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_IoaVcDzKEd-vmJlgQOiTwg" name="entity" visibility="public" type="_HIvWoDzDEd-vmJlgQOiTwg"/>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="__AGXYTzJEd-vmJlgQOiTwg" name="Connector1" visibility="public">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="__AQIYDzJEd-vmJlgQOiTwg" role="__AGXYDzJEd-vmJlgQOiTwg"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_EdFkgTzKEd-vmJlgQOiTwg" role="_EdFkgDzKEd-vmJlgQOiTwg"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_IoaVcTzKEd-vmJlgQOiTwg" role="_IoaVcDzKEd-vmJlgQOiTwg"/>
+      </ownedConnector>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_7a7AcDzJEd-vmJlgQOiTwg" name="b" visibility="public" represents="__AGXYDzJEd-vmJlgQOiTwg"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_AtBzQjzKEd-vmJlgQOiTwg" name="ctrl" visibility="public" represents="_EdFkgDzKEd-vmJlgQOiTwg"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_GfBnEDzKEd-vmJlgQOiTwg" name="e" visibility="public" represents="_IoaVcDzKEd-vmJlgQOiTwg"/>
+    </ownedBehavior>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HIvWoDzDEd-vmJlgQOiTwg" name="Entity" isAbstract="true"/>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_4aXaGfZpEeWLZcX524W9gQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4aXaGvZpEeWLZcX524W9gQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://Papyrus.profile.uml#_vaU6ggEYEeCIz8iAxBJnfA"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus.profile.uml#_H9068AEYEeCIz8iAxBJnfA"/>
+  </profileApplication>
+</uml:Model>

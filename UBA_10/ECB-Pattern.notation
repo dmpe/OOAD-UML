@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_4aXaFPZpEeWLZcX524W9gQ" type="PapyrusUMLSequenceDiagram" name="ECB-Pattern" measurementUnit="Pixel">
+  <styles xmi:type="notation:StringValueStyle" xmi:id="_yniN4PZrEeWk2vdBbsdCwA" name="diagram_compatibility_version" stringValue="1.1.0"/>
+  <element xmi:type="uml:Interaction" href="ECB-Pattern.uml#_4hGToTzJEd-vmJlgQOiTwg"/>
+</notation:Diagram>
